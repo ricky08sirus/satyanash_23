@@ -1,0 +1,27 @@
+{
+    "table_name": "example_table",
+    "table_purpose": "Store customer details",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER",
+        "description": "Primary key for customer identification"
+      },
+      {
+        "name": "name",
+        "type": "VARCHAR(255)",
+        "description": "Customer's full name"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR(255)",
+        "description": "Customer's email address"
+      },
+      {
+        "name": "created_at",
+        "type": "TIMESTAMP",
+        "description": "Record creation timestamp"
+      }
+    ]
+  }
+  

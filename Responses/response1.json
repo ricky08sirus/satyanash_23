@@ -1,0 +1,31 @@
+{
+    "status": "success",
+    "message": "Table 'example_table' created successfully.",
+    "table_name": "example_table",
+    "metadata": {
+      "columns": [
+        {
+          "name": "id",
+          "type": "INTEGER",
+          "description": "Primary key for customer identification"
+        },
+        {
+          "name": "name",
+          "type": "VARCHAR(255)",
+          "description": "Customer's full name"
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR(255)",
+          "description": "Customer's email address"
+        },
+        {
+          "name": "created_at",
+          "type": "TIMESTAMP",
+          "description": "Record creation timestamp"
+        }
+      ],
+      "created_at": "2024-09-08T12:00:00Z"
+    }
+  }
+  

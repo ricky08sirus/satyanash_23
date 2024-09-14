@@ -1,0 +1,23 @@
+{
+    "metadata": [
+      {
+        "table_name": "example_table",
+        "column_name": "id",
+        "column_description": "Primary key",
+        "created_at": "2024-09-08T12:00:00Z"
+      },
+      {
+        "table_name": "example_table",
+        "column_name": "name",
+        "column_description": "Name of the entity",
+        "created_at": "2024-09-08T12:00:00Z"
+      },
+      {
+        "table_name": "example_table",
+        "column_name": "age",
+        "column_description": "Age of the entity",
+        "created_at": "2024-09-08T12:00:00Z"
+      }
+    ]
+  }
+  

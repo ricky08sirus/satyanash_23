@@ -1,0 +1,21 @@
+# Exclude the Go build cache
+#go.mod
+#go.sum
+
+# Exclude the binary if built locally
+/webserver
+
+# Exclude Git files
+.git
+.gitignore
+
+# Exclude local development environment files
+.vscode/
+*.swp
+*.log
+
+# Exclude the Docker Compose file if present
+docker-compose.yml
+
+# Exclude readme files and markdown documentation
+*.md

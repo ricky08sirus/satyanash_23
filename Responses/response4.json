@@ -1,0 +1,18 @@
+{
+    "status": "success",
+    "message": "Table 'example_table' modified successfully.",
+    "modifications": [
+      {
+        "action": "add_column",
+        "column_name": "address",
+        "column_type": "VARCHAR(255)"
+      },
+      {
+        "action": "add_column",
+        "column_name": "phone_number",
+        "column_type": "VARCHAR(20)"
+      }
+    ],
+    "details": "The columns 'address' and 'phone_number' have been added to the 'example_table'."
+  }
+  

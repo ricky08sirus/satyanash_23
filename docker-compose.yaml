@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  postgres_container:
+    image: postgres:15
+    container_name: postgres_container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 6394
+      POSTGRES_DB: table_data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app-network
+
+  go-webserver:
+    build: .
+    container_name: go-webserver
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres_container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 6394
+      POSTGRES_DB: table_data
+      DB_HOST: postgres_container
+    command: ./webserver         # Run the compiled Go binary
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge
+

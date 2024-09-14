@@ -1,0 +1,16 @@
+{
+    "table_name": "example_table",
+    "modifications": [
+      {
+        "action": "add_column",
+        "column_name": "address",
+        "column_type": "VARCHAR(255)"
+      },
+      {
+        "action": "add_column",
+        "column_name": "phone_number",
+        "column_type": "VARCHAR(20)"
+      }
+    ]
+  }
+  
